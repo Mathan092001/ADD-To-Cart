@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+.blank-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 35%;
+    margin-right: 5rem;
+}
+.header{
+    background-color: rgb(207, 42, 207);
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgb(247, 241, 247);
+}
+.overlay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    z-index: 1;
+    display: none;
+}
+.popup-container{
+    background-color: black;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10%;
+    color: white;
+    display: none;
+    position: absolute;
+    margin-left: 40%;
+    z-index: 3;
+    transition: 0.3s all ease-in-out;
+}
+.popupbox{
+    display: flex;
+    flex-direction: column;
+}
+.popupbox input{
+    margin-bottom: 18px;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    color: rgb(216, 216, 216);
+    font-size: 18px;
+    &:focus{
+        outline: none;
+        background-color: none;
+    }
+}
+.popupbox hr{
+    margin-top: -25px;
+    margin-bottom: 35px;
+    height: 2px;
+    background-color: rgb(97, 0, 97);
+    border: none;
+}
+.popupbox label{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    color: blueviolet;
+}
+.popupbox textarea{
+    background: none;
+    margin-top: 10px;
+    height: 120px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid rgb(97, 0, 97);
+    font-size: 18px;
+    padding: 5px 8px;
+    &:focus{
+        outline: none;
+    }
+}
+.popupbox button{
+    padding: 10px 15px;
+    margin-top: 20px;
+    background-color: rgb(90, 0, 143);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(216, 216, 216);
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(125, 1, 197);
+    }
+}
+#close-popup{
+    margin-left: 95%;
+    font-size: 20px;
+    cursor: pointer;
+    color: brown;
+    &:hover{
+        color: rgb(214, 52, 52);
+    }
+}
+.plusIcon{
+    height: 80px;
+    width: 80px;
+    background-color: rgb(185, 4, 185);
+    font-size: 3rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: aliceblue;
+    transition: transform;
+    transition: 0.2s all ease-in-out;
+    &:hover{
+        background-color: rgb(255, 0, 255);
+        transform: scale(1.1);
+    }
+}
+
+.collection-container{
+   position: absolute;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+.book-container{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 350px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-container h2{
+    color: rgb(182, 0, 182);
+    margin-bottom: 5px;
+}
+.book-container h4, p{
+    margin-bottom: 10px;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(214, 214, 214);
+}
+.book-container button{
+    background-color: rgb(126, 51, 196);
+    padding: 8px 15px;
+    font-size: 15px;
+    color: rgb(33, 0, 63);
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(130, 0, 252);
+    }
+}
